@@ -13,6 +13,19 @@ const setTalkers = require('../utils/setTalkers');
 const tokenGenerator = require('../utils/tokenGenerator');
 const updateTalkersFile = require('../utils/updateTalkersFile');
 
+router.get('/search', validateToken, (req, res) => {
+   const searchTerm = req.query.q;
+   const token = tokenGenerator();
+   req.headers = { Authorization: token };
+   const talkers = getTalkers();
+   if (!searchTerm || searchTerm.trim() === '') {
+      return res.status(200).json(talkers);
+   }
+   const talkerSearched = talkers.filter((talker) =>
+      talker.name.toLowerCase().includes(searchTerm.toLowerCase()));
+   return res.status(200).json(talkerSearched);
+});
+
 router.get('/', (_req, response) => {
    const parsedTalkers = getTalkers();
    if (!parsedTalkers) return [];
@@ -29,16 +42,6 @@ router.get('/:id', (_req, response) => {
       });
    }
    return response.status(200).json(talker);
-});
-
-router.get('/search', validateToken, (req, res) => {
-   const searchTerm = req.query.q;
-   const token = tokenGenerator();
-   req.headers = { Authorization: token };
-   const Talkers = getTalkers();
-   if (!searchTerm) {
-      return res.status(200).json(Talkers);
-   }
 });
 
 router.post('/',

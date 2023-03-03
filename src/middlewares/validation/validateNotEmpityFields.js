@@ -8,17 +8,3 @@ function validateNotEmpityFields(req, res, next) {
 }
 
 module.exports = validateNotEmpityFields;
-
-   // const fields = [name, age, talk, watchedAt, rate];
-   // const fieldsName = ['name', 'age', 'talk', 'watchedAt', 'rate'];
-   // for (const field in fields) {
-   //    if (!field) return res.status(400).json({ message: `O campo "${fieldsName}" é obrigatório` });
-   // }
-
-   // const fields = [name, age, talk, watchedAt, rate];
-   // for (const field of fields) {
-   //    if (!field) {
-   //       const fieldName = fields[fields.indexOf(field)];
-   //       return res.status(400).json({ message: `O campo "${fieldName}" é obrigatório` });
-   //    }
-   // }
