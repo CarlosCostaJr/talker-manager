@@ -11,13 +11,6 @@ Os principais objetivos desse projeto foram:
 > * Desenvolver alguns endpoints que irão ler e escrever em um arquivo utilizando o módulo fs
 
 </br>
-<details>
-<summary><strong>Desempenho</strong></summary>
-Aprovado com 100% de desempenho em todos os requisitos
-
-![image](https://user-images.githubusercontent.com/99846604/211950874-eb46e776-3726-4bcc-930b-5d325feba18f.png)
-
-</details>
 
 <details>
 <summary><strong>Requisitos</strong></summary>
@@ -65,11 +58,11 @@ Aprovado com 100% de desempenho em todos os requisitos
 
 Para executar a aplicação inicie realizando o clone deste repositório com o comando abaixo.
 
-      git clone git@github.com:joaoespacheco/Trybe-Project-24-talker-manager.git
+      git clone git@github.com:CarlosCostaJr/talker-manager.git
 
 Navegue até a raíz do projeto.
 
-      cd Trybe-Project-24-talker-manager/
+      cd talker-manager/
       
 Uma vez na raiz do projeto, execute o comando abaixo para instalar as dependências do projeto.
     
@@ -130,4 +123,4 @@ Para visualizar as rotas você pode utilizar a plataforma Swagger Viewer <strong
 </br>
 
 ## 📝 Desenvolvido por:
-* [João Emanuel Soares Pacheco](https://github.com/joaoespacheco)
+* [Carlos Costa Junior](https://github.com/CarlosCostaJr)
