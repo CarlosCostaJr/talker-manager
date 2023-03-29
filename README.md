@@ -58,7 +58,7 @@ Os principais objetivos desse projeto foram:
 
 Para executar a aplicação inicie realizando o clone deste repositório com o comando abaixo.
 
-      git clone git@github.com:CarlosCostaJr/talker-manager.git
+      git clone https://github.com/CarlosCostaJr/talker-manager.git
 
 Navegue até a raíz do projeto.
 
